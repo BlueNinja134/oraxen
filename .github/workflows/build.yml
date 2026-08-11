@@ -23,7 +23,7 @@ jobs:
           cache-disabled: true
 
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon -x test --continue --offline || ./gradlew shadowJar --no-daemon -x test
+        run: ./gradlew shadowJar --no-daemon -x test
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
