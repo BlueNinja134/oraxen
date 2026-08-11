@@ -12,22 +12,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up JDK 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '21'
           distribution: 'temurin'
 
-      # Vypnutí automatické cache u Gradle akci
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v3
+        uses: gradle/actions/setup-gradle@v4
         with:
           cache-disabled: true
 
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon -x test
-
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: Oraxen-Plugin
-          path: build/libs/*.jar
+        run: ./gradlew build --no-daemon -x test --stacktrace
