@@ -30,7 +30,6 @@ public class CompatibilitiesManager {
         addCompatibility("MythicMobs", MythicMobsCompatibility.class, true);
         addCompatibility("BlockLocker", BlockLockerCompatibility.class, true);
         addCompatibility("Skript", SkriptCompatibility.class, true);
-        addCompatibility("Iris", IrisCompatibility.class, true);
     }
 
     public static void disableCompatibilities() {
