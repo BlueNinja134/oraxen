@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">A Minecraft plugin for easily creating custom items, blocks, glyphs, paintings, music discs, and more.</h4>
+<h4 align="center">A Minecraft plugin for easily creating custom items, blocks, glyphs, paintings, music discs, and more. :)</h4>
 
 <p align="center">
   <a href="https://www.codefactor.io/repository/github/oraxen/oraxen">
